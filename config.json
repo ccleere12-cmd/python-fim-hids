@@ -1,0 +1,8 @@
+{
+    "monitored_directories": [
+        "~/python-linux-fim-hids/test-monitor-directory/",
+        "~/python-linux-fim-hids/test-monitor-directory2/"
+    ],
+    "baseline_file": "~/python-linux-fim-hids/baseline.json",
+    "log_file": "~/python-linux-fim-hids/audit.log"
+}
