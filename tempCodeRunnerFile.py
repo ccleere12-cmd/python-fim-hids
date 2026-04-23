@@ -1,20 +1,3 @@
-#!/usr/bin/env python3
-
-# Maybe FIX (one's path is not expanded while the other is)
-# 2026-04-23T17:40:21 event=BASELINE_RECREATED path="~/python-fim-hids/baseline.json"
-# 2026-04-23T17:41:13 event=MODIFIED path="C:\Users\cclee/python-fim-hids/test2/test5\i.txt" size_old=6 size_new=0 last_modified_old="2026-04-21T17:22:44" last_modified_new="2026-04-23T17:41:10"
-
-
-# Next things TODO (most likely in this order): 
-#   !- Maybe add file permission and/or ownership tracking (see Chat #8 and notes)
-#   !- Maybe add summary reporting per scan (see Chat #7)
-#   !- Maybe add option to have log entries be sent to the user via email (and/or something else like to the terminal and/or a phone number)
-#   !- The project treats an empty dictionary as invalid for a baseline, but if the monitored directories are empty, then {} technically could be correct. Maybe fix this
-#   - Figure out error checking (see notes; also see comment in this script for Chat's error checking example), and when to use .get(...) instead of [...]. Ask Chat to teach you how to do error checking (probably including try…catch) for this project (especially with dictionaries and nested dictionaries) without giving any answers. Also figure out where the error messages will be displayed (probably in cron.log). Test cron.log to see if it works and if it logs the errors (and other stuff) you want it to log. Also figure out what the try...except that you implemented will do in relation to cron.log
-#   !- Figure out the right folders to monitor in Linux and why. Also, if you do exclusions, figure out the right stuff to exclude/ignore in Linux
-#   - Fix, clean up and add comments
-#   - Figure out what the permissions on each file in your project should be
-
 # Cron entry: */5 * * * * /usr/bin/python3 /home/cjcleere/python-fim-hids/fim_hids.py >> /home/cjcleere/python-fim-hids/cron.log 2>&1
 
 import os
