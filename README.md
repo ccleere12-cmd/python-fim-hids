@@ -1,2 +1,2 @@
-# python-fim-hids
+# fim-hids
 
