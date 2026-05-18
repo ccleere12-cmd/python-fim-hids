@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 
-# Example cron entry to run every 5 mins: 
-# */5 * * * * /usr/bin/python3 /home/cjcleere/fim-hids/fim_hids.py >> /home/cjcleere/fim-hids/cron.log 2>&1
-
 import os
 import json
 import hashlib
