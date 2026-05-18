@@ -44,7 +44,7 @@ fim-hids/
     └── fim-hids-paper.pdf
 ```
 
-The following files may be generated or used at runtime:
+The following files are generated or used at runtime and should usually be ignored by Git:
 
 ```text
 baseline.json
