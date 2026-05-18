@@ -19,7 +19,7 @@ A Python-based File Integrity Monitoring (FIM) Host-Based Intrusion Detection Sy
 - Writes structured events to an audit log
 - Can be scheduled with cron
 - Uses only Python standard library modules
-- Is a cross-platform system
+- Designed to be cross-platform
 
 ## Technologies and Concepts Used
 
@@ -134,7 +134,7 @@ The script can be scheduled with cron for periodic monitoring.
 
 Example cron entry that runs every 5 minutes:
 
-```cron
+```text
 */5 * * * * /usr/bin/python3 /home/user/fim-hids/fim_hids.py >> /home/user/fim-hids/cron.log 2>&1
 ```
 
