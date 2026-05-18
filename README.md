@@ -34,14 +34,15 @@ A Python-based File Integrity Monitoring (FIM) Host-Based Intrusion Detection Sy
 
 ```text
 fim-hids/
-├── fim_hids.py
-├── config.json
-├── requirements.txt
+├── docs/
+│   └── fim-hids-paper.pdf
+├── .gitattributes
+├── .gitignore
 ├── LICENSE
 ├── README.md
-├── .gitignore
-└── docs/
-    └── fim-hids-paper.pdf
+├── config.json
+├── fim_hids.py
+└── requirements.txt
 ```
 
 The following files are generated or used at runtime and should usually be ignored by Git:
